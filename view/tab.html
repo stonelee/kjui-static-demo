@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link href="../css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div class="hd unselectable">
+    <span class="hd-title">子模块标题</span>
+  </div>
+  <div class="bd" style="padding:3px;height:566px;">
+    <div id="tab">
+      <ul class="tab-nav">
+        <li class="tab-hd">item</li>
+        <li class="tab-hd">item</li>
+        <li class="tab-hd">item</li>
+      </ul>
+      <div class="tab-strip"></div>
+      <div class="tab-bd">
+        <div class="bd">a</div>
+        <div class="bd">b</div>
+        <div class="bd">c</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/sea-modules/seajs/1.3.0/sea.js" data-main="../config"></script>
+  <script type="text/javascript">
+    seajs.use('../js/tab');
+  </script>
+</body>
+</html>
+

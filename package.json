@@ -1,0 +1,26 @@
+{
+  "name": "static-demo",
+  "version": "0.0.1",
+  "root": "kj",
+  "description": "static demo",
+  "author": "Stone Lee <istonelee@gmail.com> (http://stonelee.info)",
+  "dependencies": {
+    "$": "$",
+    "widget": "arale/widget/1.0.2/widget",
+    "accordion": "kjui/accordion/0.0.1/accordion",
+    "date-picker": "kjui/date-picker/0.0.1/date-picker",
+    "dialog": "kjui/dialog/0.0.1/dialog",
+    "grid": "kjui/grid/0.0.1/grid",
+    "tab": "kjui/tab/0.0.1/tab",
+    "tree": "kjui/tree/0.0.1/tree"
+  },
+  "output": {
+    "common.js": "*",
+    "main.js": ".",
+    "tab.js": ".",
+    "tree.js": ".",
+    "dialog.js": ".",
+    "grid.js": ".",
+    "treegrid.js": "."
+  }
+}

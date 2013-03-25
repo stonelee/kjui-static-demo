@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>index</title>
+  <link rel="stylesheet" href="./css/all.css" />
+</head>
+<body>
+  <div class="header">
+    <span>Ext UI原型系统</span>
+  </div>
+
+  <div class="main">
+    <div class="mod" style="float:left;width:200px;height:600px;left:5px;">
+      <div class="hd unselectable">
+        <span class="hd-title">菜单</span>
+        <i class="icon icon-tool icon-tool-collapse-left"></i>
+      </div>
+      <div id="menu" class="bd"></div>
+    </div>
+
+    <div class="splitter" style="float:left;height:600px;left:5px;">
+      <i class="splitter-mini-left"></i>
+    </div>
+
+    <iframe class="mod" id="main" src="view/tab.html" style="width:900px;height:600px;margin-left:5px;" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+  <div class="footer">
+    <span>©2012 煤炭科学研究总院</span>
+  </div>
+
+  <script src="/sea-modules/seajs/1.3.0/sea.js" data-main="./config"></script>
+  <script type="text/javascript">
+    seajs.use('./js/main');
+  </script>
+</body>
+</html>
+

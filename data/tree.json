@@ -1,0 +1,62 @@
+{
+  "id": 0,
+  "name": "攸县",
+  "children": [{
+    "id": 1,
+    "name": "1验票站",
+    "children": []
+  },
+  {
+    "id": 2,
+    "name": "2验票站",
+    "children": []
+  },
+  {
+    "id": 3,
+    "name": "3验票站",
+    "children": [{
+      "id": 31,
+      "name": "31验票站",
+      "children": []
+    },{
+      "id": 32,
+      "name": "32验票站",
+      "children": []
+    }]
+  },
+  {
+    "id": 4,
+    "name": "4验票站",
+    "children": []
+  },
+  {
+    "id": 5,
+    "name": "5验票站",
+    "children": [{
+      "id": 51,
+      "name": "51验票站",
+      "children": []
+    },{
+      "id": 52,
+      "name": "52验票站",
+      "children": [{
+        "id": 521,
+        "name": "521验票站",
+        "children": []
+      }]
+    }]
+  },
+  {
+    "id": 6,
+    "name": "6验票站",
+    "children": [{
+      "id": 61,
+      "name": "61验票站",
+      "children": [{
+        "id": 611,
+        "name": "611验票站",
+        "children": []
+      }]
+    }]
+  }]
+}
