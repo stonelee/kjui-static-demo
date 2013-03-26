@@ -32,73 +32,9 @@ package.json为打包配置文件
 
 ##发布
 
-生成_site
+供外网演示使用
 
-
-
-打包
-
-开发环境下的模块依赖在config.js中指定
-
-生产环境部署
-
-1. 打包
-
-使用package.json进行打包配置
-
-1.1 配置依赖模块路径
-
-将config.js中alias复制到package.json中的dependencies
-
-1.2 将公共依赖模块打包到common
-
-在src/common.js中require所有公共模块
-
-package.json中配置公共模块
-    "output": {
-      "common.js": "*"
-    }
-
-package.json中配置各业务模块
-    "output": {
-        "main.js": ".",
-        "tab.js": ".",
-        "tree.js": ".",
-        "treegrid.js": "."
-    }
-
-1.3 spm build
-
-2. 生产环境页面配置
-
-将所有html文件复制到生产环境目录
-
-更改css路径
-
-更改js配置
-
-  <script src="../sea-modules/seajs/1.3.0/sea.js"></script>
-  <script type="text/javascript">
-    seajs.config({
-      alias: {
-        '$': 'gallery/jquery/1.8.1/jquery',
-        '$-debug': 'gallery/jquery/1.8.1/jquery-debug',
-        'common': 'kj/demo/0.0.1/common'
-      }
-    });
-
-    seajs.use(['common', '../sea-modules/kj/demo/0.0.1/main']);
-  </script>
-
-这种配置省掉了config.js文件,页面加载时需要sea.js, jquery.js, common.js, main.js四个文件
-
-如果需要调试可加上-debug
-    seajs.config({
-      alias: {
-        '$': 'gallery/jquery/1.8.1/jquery',
-        '$-debug': 'gallery/jquery/1.8.1/jquery-debug',
-        'common': 'kj/demo/0.0.1/common-debug'
-      }
-    });
-
-    seajs.use(['common', '../sea-modules/kj/demo/0.0.1/main-debug']);
+```
+$ node deploy.js
+```
+生成_site文件夹
