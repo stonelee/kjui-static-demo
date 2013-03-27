@@ -1,0 +1,76 @@
+[{
+  "id": 1,
+  "name": "模块1",
+  "icon": "icon-book-addresses",
+  "children": [{
+    "id": 11,
+    "name": "Tree",
+    "uri": "tree",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 12,
+    "name": "TreeGrid",
+    "uri": "treegrid",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 13,
+    "name": "Tab",
+    "uri": "tab",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 14,
+    "name": "Grid",
+    "uri": "grid",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 15,
+    "name": "Dialog",
+    "uri": "dialog",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 16,
+    "name": "Form",
+    "uri": "form",
+    "icon": "icon_book",
+    "children": []
+  }]
+},{
+  "id": 2,
+  "name": "模块2",
+  "icon": "icon-book-addresses",
+  "children": [{
+    "id": 21,
+    "name": "功能21",
+    "uri": "module21",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 22,
+    "name": "功能22",
+    "uri": "module22",
+    "icon": "icon_book",
+    "children": []
+  }]
+},{
+  "id": 3,
+  "name": "模块3",
+  "icon": "icon-book-addresses",
+  "children": [{
+    "id": 31,
+    "name": "功能31",
+    "uri": "module31",
+    "icon": "icon_book",
+    "children": []
+  },{
+    "id": 32,
+    "name": "功能32",
+    "uri": "module32",
+    "icon": "icon_book",
+    "children": []
+  }]
+}]
