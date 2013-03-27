@@ -70,6 +70,7 @@ reCreateDir(siteName);
 cp('view/', siteName + '/view/');
 cp('data/', siteName + '/data/');
 cp('index.html', siteName + '/index.html');
+cp('.gitignore', siteName + '/.gitignore');
 
 runCmd('spm build --src js/').on('exit', function() {
   cp('dist/', siteName + '/js/');
