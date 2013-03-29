@@ -54,11 +54,9 @@ function progressHtml(filename) {
     data = data.replace('<script src="/sea-modules/seajs/1.3.0/sea.js" data-main="./config"></script>', '<script src="http://static.alipayobjects.com/seajs/1.3.1/sea.js"></script>');
     data = data.replace('<script src="/sea-modules/seajs/1.3.0/sea.js" data-main="../config"></script>', '<script src="http://static.alipayobjects.com/seajs/1.3.1/sea.js"></script>');
 
-    var perfix = data.indexOf("seajs.use('./") > -1 ? './' : '../';
     //replace中$$代表$
-    var config = "seajs.config({ alias: { '$$': 'gallery/jquery/1.8.1/jquery', '$$-debug': 'gallery/jquery/1.8.1/jquery-debug' } });";
-    var use = config + "\nseajs.use('" + perfix + "js/common');seajs.use";
-    data = data.replace('seajs.use', use);
+    var data_config = "seajs.config({ alias: { '$$': 'gallery/jquery/1.8.1/jquery', '$$-debug': 'gallery/jquery/1.8.1/jquery-debug' } });";
+    data = data.replace(/seajs\.use\('(\.{1,2})[^']+'\);/, data_config + "\nseajs.use('$1/js/common', function() {$&});");
 
     fs.writeFileSync(filename, data);
   });
